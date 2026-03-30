@@ -26,7 +26,6 @@ print('안녕히가세요')
 result = add(10, 4)
 print(f'결과는 {result}')
 
-
 print(test())
 
 sayHello('Hugo')
