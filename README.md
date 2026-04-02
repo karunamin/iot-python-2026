@@ -417,9 +417,9 @@ IoT 개발자 파이썬 리포지토리
     - C++ OpenCV보다 속도가 느림 -> PyTorch로 속도 개선
 
 - VLC
-    - 영상처리 쪽 코덱이 ㅣㄹ요
+    - 영상처리 쪽 코덱이 필요
     - https://www.videolan.org/vlc/index.ko.html
-    - httpl://livecodec.co.kr
+    - https://livecodec.co.kr
 
 - OpenCV 간단 이미지에디터 - [소스](./day05/ex27_cv_editor.py)
     - 대비/밝기, 블러, 엣지, 회전, 이진화 기능, 이미지 로드/저장
