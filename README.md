@@ -527,3 +527,65 @@ IoT 개발자 파이썬 리포지토리
     4. 미분계산 -> 역전파
     5. w와 b를 약간 수정 -> 경사하강법
     6. 반복 -> 학습률
+
+#### 정리
+
+- 일반 프로그래밍 : 입력값, 가중치, 젏편을 입력해서, 출력값을 리턴하는 프로그램 개발
+- 인공지능 프로그래밍 : 입력값, 출력값을 입력해서 가중치, 절편 등을 구하는 모델을 개발
+
+##### 퍼셉트론
+
+- 다수의 신호를 입력, 하나이 신호로 출력하는 모델
+- 인간의 뉴런(신경세포)가 다른 뉴런의 신호를 받아 활성화/비활성화되는 것을 모방
+
+    ![image.png](attachment:image.png)
+
+#### 다중퍼셉트론
+
+- 단일 퍼셉트론의 한계를 극복하기 위해 등장. 퍼셉트론을 여러개 쌓아올린 구조
+- 입력츨, 은닉층, 출력층으로 구분
+
+    ![image.png](attachment:image.png)
+
+#### 활성화함수
+- 출력을 어떻게 변형할지 결정하는 맣수
+- Sigmoid, Tanh, `ReLU`, Softmax
+
+## 9일차
+
+### 딥러닝 실습
+
+#### Fashion-NNIST 분류모델
+
+- MNIST 데이터셋 중 독일 온라인 패션 플랫폼 잘란도에서 공개한 데이터넷
+- 6만개 학습 이미지, 1만개 테스트 이미지
+- 총 10가지 종류 : 티셔츠, 바지, 풀오버, 드레스, 코트, 샌들, 셔츠, 스니커즈, 가방, 발목부츠
+- 28x28 픽셀 흑백이미지 제공
+
+#### CUDA 사용 팁
+
+- 현재 NVIDIA RTX 5060 그래픽카드
+    - GPU 아키텍처 - Blackwell계열
+    - CUDA Compute Cupa - sm_120 사용
+    - cuda 12.8 이상 사용
+- 이전 버전은 cuda 12.6 사용가능
+
+- 설치 방법
+
+    ```bash
+    > ./iot-venv/Scripts/Activate.ps1  # 가상환경 진입
+
+    > pip uninstall torch torchvision -y
+
+    > pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130 
+    ```
+
+#### CNN
+
+- [소스](./day09/ex33_pytorch_cnn.ipynb)
+- Convolutional Neural Network(합성곱 신경망) : 이미지나 영상 분석에 특화된 인공지능 신경망 구조
+- 로지스틱 회귀 : 이미지를 1차원으로 변경 처리
+
+![alt text](image-16.png)
+
+- 활성화 알고리즘에 Softmax() 클래스는 deprecated(추후 버전에 삭제예정)임
