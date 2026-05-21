@@ -589,3 +589,39 @@ IoT 개발자 파이썬 리포지토리
 ![alt text](image-16.png)
 
 - 활성화 알고리즘에 Softmax() 클래스는 deprecated(추후 버전에 삭제예정)임
+
+
+## 10일차
+
+### 사전훈련 모델 활용
+
+- [소스](./day10/ex35_pytorch_pretrained.ipynb)
+- ImageNet : 세계에서 가장 유명한 대규모 이미지 데이터셋
+    - 2009년도 부터 공개한 이미지 은행
+    - 2만개 클래스, 총 1400만장 이상 고해상도 이미지
+- ResNet18 : MS연구소에서 개발한 ResNet의 경량화 버전
+    - 18 : 가중치 학습 18개 층으로 구성
+    - PyTorch나 Tensorflow에서
+
+- 일반 CNN : 데이터준비 > 모델 설계 > 처음부터 학습
+
+- 사전학습 모델 : 학습된 모델 로드 > 마지막 분류층만 수정 > 나의 데이터로 추가학습
+
+![alt text](image-17.png)
+
+### 모델 불러오기
+
+- [소스](./day10/ex36_pytorch_trainmodel.ipynb)
+- 학습 후 저장된 모델을 로드해서 훈련시간 절약
+
+![alt text](image-18.png)
+
+## 11일차
+
+### YOLO로 객체탐지
+
+- YOLO : You Only Look Once 약자
+    - PyTorch 라이브러리 위에서 동작하는 물체인식 라이브러리
+    - Ultralytics YOLO : https://www.ultralytics.com/
+    - 공식 github : https://github.com/ultralytics/ultralytics
+- 이미지, 영상 인식
