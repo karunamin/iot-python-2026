@@ -624,4 +624,12 @@ IoT 개발자 파이썬 리포지토리
     - PyTorch 라이브러리 위에서 동작하는 물체인식 라이브러리
     - Ultralytics YOLO : https://www.ultralytics.com/
     - 공식 github : https://github.com/ultralytics/ultralytics
+
 - 이미지, 영상 인식
+
+- YOLO 설치
+
+    ```powershell
+    > pip install ultralytics
+    ```
+

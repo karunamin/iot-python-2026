@@ -208,3 +208,11 @@ __marimo__/
 
 # 제외시킬 가상환경
 iot-venv/
+day10/cust_models/
+day10/dataset/
+day11/data/
+runs/
+# 모델파일은 제외
+*.pth
+# 100메가 넘는파일 반드시 제외
+day/yolo11x.px
