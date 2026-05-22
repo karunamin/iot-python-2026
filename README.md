@@ -633,3 +633,7 @@ IoT 개발자 파이썬 리포지토리
     > pip install ultralytics
     ```
 
+
+https://github.com/user-attachments/assets/d561b1c7-9bad-4512-89d7-a17d2b1483cb
+
+
